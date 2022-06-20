@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -webkit-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-family: 'Open Sans', serif;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+
+/*min-width pelo menos 320 px para ter efeito nesse caso*/
+
+@media screen and (min-width: 320px) {
+    .jl-page-wrapper,
+    .jl-preloader {
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: #1c1c1c;
+        border: 30px solid #000;
+    }
+    .jl-preloader {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .jl-topbar {
+        width: 100%;
+        height: 110px;
+        display: block;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .jl-logo {
+        width: 74px;
+        height: 110px;
+        float: left;
+        margin-left: 60px;
+        background-color: #2CCB69;
+        border-radius: 0 0 37px 0;
+    }
+    .jl-logo img {
+        width: 46px;
+        height: 31px;
+        display: block;
+        margin: 55px auto;
+    }
+    .jl-menu {
+        display: none;
+    }
+    .jl-btn-contact {
+        width: 45px;
+        height: 45px;
+        display: block;
+        background-color: #2CCB69;
+        background-image: url('../images/icon-contact-close.svg');
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 45px;
+        right: 45px;
+        border-radius: 50%;
+        z-index: 200;
+        transition: all 0.2s ease-out;
+        border: none;
+        cursor: pointer;
+    }
+    .jl-contact-info {
+        width: 245px;
+        height: 165px;
+        display: none;
+        padding: 25px;
+        position: fixed;
+        bottom: 115px;
+        right: 65px;
+        z-index: 200;
+    }
+    .jl-contact-info-inner p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .jl-contact-info-inner {
+        display: table;
+        width: 100%;
+        float: right;
+    }
+    .jl-corner {
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: right;
+    }
+    .jl-corner::after {
+        content: '';
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        bottom: -25px;
+        right: -0.5px;
+        background: transparent url('../images/corner.svg') no-repeat;
+    }
+    .jl-social-links {
+        width: 100%;
+        height: 45px;
+        display: block;
+        position: relative;
+        left: -12px;
+    }
+    .jl-social {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+    }
+    .jl-social>img {
+        width: 20px;
+        height: auto;
+        display: block;
+        margin: 13px auto 0;
+    }
+}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+    .jl-menu {
+        display: table;
+        float: left;
+        height: 110px;
+        margin-left: 30px;
+    }
+    .jl-menu a {
+        text-decoration: none;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 400;
+        color: #bcbcbc;
+        text-transform: lowercase;
+        display: inline-block;
+        margin: 50px 20px 0 20px;
+        position: relative;
+    }
+    .jl-menu a:first-child {
+        margin-left: 0;
+    }
+    .jl-menu a:hover {
+        color: #2CCB69;
+    }
+    .jl-menu a:before {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #2CCB69;
+        display: block;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        transition: all 0.2s ease-out;
+        transform: scale(0, 1);
+        transform-origin: center left;
+    }
+    .jl-menu a:hover:before {
+        transform: scale(1, 1);
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1364px) {}
+
+@media screen and (min-width: 1600px) {}
+
+
+/* CLASSES UTILITARIAS */
+
+.jl-title {
+    font-family: 'Abril Fatface', serif;
+    font-weight: 400;
+}
+
+.jl-text-green {
+    color: #2CCB69;
+}
+
+.jl-text-dark {
+    color: #4d4c4c;
+}
+
+.jl-text-light {
+    color: #bcbcbc;
+}
+
+.jl-text-black {
+    color: #000;
+}
+
+.jl-bg-green {
+    background-color: #2CCB69;
+}
+
+.jl-bg-dark {
+    background-color: #4d4c4c;
+}
+
+.jl-bg-light {
+    background-color: #bcbcbc;
+}
+
+.jl-bg-black {
+    background-color: #000;
+}
+
+.jl-mar-15 {
+    margin: 15px;
+}
+
+.jl-mar-top-15 {
+    margin-top: 15px;
+}
+
+.jl-mar-right-15 {
+    margin-right: 15px;
+}
+
+.jl-mar-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.jl-mar-left-15 {
+    margin-left: 15px;
+}
+
+.jl-pad-15 {
+    padding: 15px;
+}
+
+.jl-pad-top-15 {
+    padding-top: 15px;
+}
+
+.jl-pad-right-15 {
+    padding-right: 15px;
+}
+
+.jl-pad-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.jl-pad-left-15 {
+    padding-left: 15px;
+}
+
+
+/*CLASSES DE ESTADO*/
+
+.jl-is-open {
+    display: block;
+}
+
+.jl-change-icon {
+    background-position-y: -45px;
+}
+
+.jl-fade-out {
+    animation: fadeOut 2s forwards ease-out;
+}
