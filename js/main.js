@@ -3,8 +3,9 @@ var btnContact = document.querySelector('.jl-btn-contact')
 // preloader imagem
 window.addEventListener('load', function() {
     var pagePreloader = document.querySelector('.jl-preloader');
+    pagePreloader.classList.add('jl-fade-out')
     this.setTimeout(function() {
-        pagePreloader.classList.add('jl-fade-out')
+        pagePreloader.style.display = 'none';
     }, 2000)
 
 })

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <title>João Lemon - UX/UI</title>
@@ -19,8 +20,38 @@
             <img src="images/lemon-loader.svg" alt="Preloader" class="jl-mar-bottom-15">
             <p class="jl-text-light jl-mar-top-15">Aguarde um porquinho ... Estou preparando a limonada</p>
         </div>
-
     </div>
+    <div class="jl-overlay"></div>
+    <div class="jl-modal  jl-bg-black">
+        <div class="jl-modal-header">
+            <h1 class="jl-title jl-text-green">Solicite um orçamento</h1>
+            <button class="jl-close-modal">X</button>
+        </div>
+        <div class="jl-modal-body jl-text-light">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Por favor insira os dados abaixo e entraremos em contato</p>
+                </div>
+            </div>
+            <div class="row jl-mar-top-15">
+                <div class="col-sm-12">
+                    <form action="" class="jl-form">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" class="jl-field">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="jl-field">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <header class="jl-topbar">
         <div class="jl-logo">
@@ -55,7 +86,25 @@
         </div>
     </div>
     <button class="jl-btn-contact"></button>
-    <div class="jl-page-wrapper"></div>
+    <div class="jl-page-wrapper">
+        <section class="jl-full-height jl-first-section" id="jl-home-presentation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 offset-md-2 jl-display-text">
+                        <h1 class="jl-text-green jl-title-big">Olá</h1>
+                        <p class="jl-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum consectetur elementum. Maecenas quis lacus vitae turpis consectetur pulvinar. Phasellus eget</p>
+                        <button class="jl-btn jl-btn-large jl-btn-green jl-mar-top-15">Solicite um orçamento</button>
+                    </div>
+                </div>
+            </div>
+            <div class="jl-scroll-down">
+                <div class="jl-arrow-down">
+                    <img src="images/arrow-down.svg" alt="Arrow">
+                </div>
+            </div>
+        </section>
+        <section class="jl-full-height"></section>
+    </div>
     <script src="js/main.js"></script>
 </body>
 
