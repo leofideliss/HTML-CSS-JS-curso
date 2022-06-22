@@ -17,6 +17,12 @@ label {
     }
 }
 
+@keyframes slideTopIn {
+    to {
+        top: 15%;
+    }
+}
+
 @keyframes lineDown {
     0% {
         transform: scale(1, 0);
@@ -85,7 +91,7 @@ label {
     .jl-overlay {
         width: 100%;
         height: 100vh;
-        display: block;
+        display: none;
         position: fixed;
         z-index: 1000;
         top: 0;
@@ -94,11 +100,11 @@ label {
     }
     .jl-modal {
         width: 800px;
-        display: table;
+        display: none;
         padding: 30px;
         border-radius: 0 30px 30px 30px;
         position: fixed;
-        top: 30%;
+        top: -100%;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -111,15 +117,23 @@ label {
         display: table;
         position: relative;
     }
-    .jl-field {
+    .jl-form label {
+        margin-bottom: 10px;
+        font-size: 16px;
+        display: inline-block;
+    }
+    .jl-field,
+    .jl-textarea {
         width: 100%;
-        height: 45px;
         background-color: #2f2f2f;
         color: #fff;
         border-radius: 4px;
         border: none;
         font-size: 16px;
         text-indent: 15px;
+    }
+    .jl-field {
+        height: 45px;
     }
     .jl-close-modal {
         width: 38px;
@@ -354,6 +368,11 @@ label {
     text-transform: lowercase;
 }
 
+.jl-btn-block {
+    display: block;
+    width: 100%;
+}
+
 .jl-btn-small {
     height: 28px;
     padding: 0 20px;
@@ -498,6 +517,10 @@ label {
     font-size: 100px;
 }
 
+.jl-no-padding {
+    padding: 0 !important;
+}
+
 
 /*CLASSES DE ESTADO*/
 
@@ -511,4 +534,8 @@ label {
 
 .jl-fade-out {
     animation: fadeOut 2s forwards ease-out;
+}
+
+.jl-slide-top-in {
+    animation: slideTopIn 0.6s forwards cubic-bezier(.7, .16, .43, .82);
 }
