@@ -33,7 +33,7 @@ for (var i = 0; i < toggleModal.length; i++) {
 
 
 // biblioteca waypoints para seta scroll down sumir
-var myScrollDown = document.querySelector('.jl-scroll-down');
+var myScrollDown = document.querySelector('.jl-scroll-down')
 var waypoint = new Waypoint({
     element: myScrollDown,
     handler: function() {

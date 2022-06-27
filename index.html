@@ -108,7 +108,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-3 offset-md-2 jl-display-text">
-                        <h1 class="jl-text-green jl-title-big">Olá</h1>
+                        <h1 class="jl-text-green jl-title-xlarge">Olá</h1>
                         <p class="jl-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum consectetur elementum. Maecenas quis lacus vitae turpis consectetur pulvinar. Phasellus eget</p>
                         <button class="jl-btn jl-btn-large jl-btn-green jl-mar-top-15 jl-toggle-modal">Solicite um
                             orçamento</button>
@@ -127,28 +127,133 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="jl-portfolio-navigator">
-                            <div class="jl-item-counter">
-                                <span> 01</span>
+                            <div class="jl-navigator-counter">
+                                <span class="jl-text-green"> 01</span>
                             </div>
-                            <nav>
-                                <a href="#" class="jl-item-active"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
+                            <nav class="jl-item-navigator">
+                                <a href="#" class="jl-item-active" data-nav="1"></a>
+                                <a href="#" data-nav="2"></a>
+                                <a href="#" data-nav="3"></a>
+                                <a href="#" data-nav="4"></a>
+                                <a href="#" data-nav="5"></a>
                             </nav>
-                            <div class="jl-portfolio-next-prev">
-
+                            <div class="jl-items-next-prev jl-no-radius-left">
+                                <div class="jl-item-prev">
+                                    <ion-icon name="caret-back-outline"></ion-icon>
+                                </div>
+                                <div class="jl-items-counter">
+                                    <span class="jl-current-slide"></span> /
+                                    <span class="jl-total-slide"></span>
+                                </div>
+                                <div class="jl-item-next">
+                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                </div>
                             </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10">
+                        <div class="jl-slider-container jl-full-height">
+                            <ul class="jl-slider-list">
+                                <li class="jl-slider-item ">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="jl-portfolio-item-info jl-text-light">
+                                                <h1 class="jt-title jl-title-large jl-mar-bottom-15"> Testando o teste
+                                                </h1>
+                                                <p class="jl-mar-bottom-30"> Testando o teste testado no teste</p>
+                                                <button class="jl-btn jl-btn-large jl-btn-green">Ver testes</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="jl-portfolio-item-thumb">
+                                                <img src="images/thumb-1.jpg" alt="Testando o teste" title="testando" style="width: 550px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jl-slider-item ">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="jl-portfolio-item-info jl-text-light">
+                                                <h1 class="jt-title jl-title-large jl-mar-bottom-15"> Testando o teste 2
+                                                </h1>
+                                                <p class="jl-mar-bottom-30"> Testando o teste testado no teste 2</p>
+                                                <button class="jl-btn jl-btn-large jl-btn-green">Ver testes 2</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="jl-portfolio-item-thumb">
+                                                <img src="images/thumb-2.jpg" alt="Testando o teste" title="testando" style="width: 550px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jl-slider-item ">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="jl-portfolio-item-info jl-text-light">
+                                                <h1 class="jt-title jl-title-large jl-mar-bottom-15"> Testando o teste 3
+                                                </h1>
+                                                <p class="jl-mar-bottom-30"> Testando o teste testado no teste 3</p>
+                                                <button class="jl-btn jl-btn-large jl-btn-green">Ver testes 3</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="jl-portfolio-item-thumb">
+                                                <img src="images/thumb-3.jpg" alt="Testando o teste" title="testando" style="width: 550px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jl-slider-item ">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="jl-portfolio-item-info jl-text-light">
+                                                <h1 class="jt-title jl-title-large jl-mar-bottom-15"> Testando o teste 4
+                                                </h1>
+                                                <p class="jl-mar-bottom-30"> Testando o teste testado no teste 4</p>
+                                                <button class="jl-btn jl-btn-large jl-btn-green">Ver testes 4</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="jl-portfolio-item-thumb">
+                                                <img src="images/thumb-4.jpg" alt="Testando o teste" title="testando" style="width: 550px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="jl-slider-item ">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="jl-portfolio-item-info jl-text-light">
+                                                <h1 class="jt-title jl-title-large jl-mar-bottom-15"> Testando o teste 5
+                                                </h1>
+                                                <p class="jl-mar-bottom-30"> Testando o teste testado no teste 5</p>
+                                                <button class="jl-btn jl-btn-large jl-btn-green">Ver testes 5</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="jl-portfolio-item-thumb">
+                                                <img src="images/thumb-5.jpg" alt="Testando o teste" title="testando" style="width: 550px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js" integrity="sha512-g6IhMPPqSSUgE+lYgBpdsXICK0fNhDlDDEuIbphNIKfPTYFD/1VcnxA+7pS9mibvzIb5SB0nNvii5M+yMwkcJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
 </body>
 
