@@ -97,7 +97,8 @@ var nextSliderAnime = () => {
     sliderPos -= containerWidth;
     anime({
         targets: sliderList,
-        translateX: sliderPos
+        translateX: sliderPos,
+        easing: "cubicBezier(.14,.93,.45,.82)"
     });
 }
 
@@ -108,7 +109,8 @@ var prevSliderAnime = () => {
     sliderPos += containerWidth
     anime({
         targets: sliderList,
-        translateX: sliderPos
+        translateX: sliderPos,
+        easing: "cubicBezier(.14,.93,.45,.82)"
     });
 }
 
