@@ -51,8 +51,29 @@ var removeCounter = () => {
     }
 }
 
+// slider ativo
+var setActiveSlider = () => {
+    for (var nv = 0; nv < sliderItem.length; nv++) {
+        let item = parseInt(sliderItem[nv].getAttribute('data-slider'))
 
-// item ativo
+        if (item == counterCurrent) {
+            sliderItem[nv].classList.add('jl-slider-active')
+            sliderItem[nv].querySelector('.jl-portfolio-item-box').classList.add('jl-scale-right')
+            sliderItem[nv].querySelector('.jl-portfolio-item-thumb img').classList.add('jl-scale-up')
+            sliderItem[nv].querySelector('.jl-portfolio-item-info').classList.add('jl-fade-from-left')
+        }
+    }
+}
+var removeActiveSlider = () => {
+        for (var nv = 0; nv < sliderItem.length; nv++) {
+            sliderItem[nv].classList.remove('jl-slider-active')
+            sliderItem[nv].querySelector('.jl-portfolio-item-box').classList.remove('jl-scale-right')
+            sliderItem[nv].querySelector('.jl-portfolio-item-thumb img').classList.remove('jl-scale-up')
+            sliderItem[nv].querySelector('.jl-portfolio-item-info').classList.remove('jl-fade-from-left')
+
+        }
+    }
+    // item ativo
 
 var setActive = () => {
     for (var nv = 0; nv < navItens.length; nv++) {
@@ -68,6 +89,7 @@ var setActive = () => {
     }
 }
 
+
 var changeActive = () => {
         for (var nv = 0; nv < navItens.length; nv++) {
             navItens[nv].classList.remove('jl-item-active')
@@ -76,8 +98,9 @@ var changeActive = () => {
                 width: 20
             });
         }
-
+        removeActiveSlider()
         setActive()
+        setActiveSlider()
     }
     // formatar contador 
 var counterFormat = (n) => {
