@@ -61,6 +61,8 @@ var setActiveSlider = () => {
             sliderItem[nv].querySelector('.jl-portfolio-item-box').classList.add('jl-scale-right')
             sliderItem[nv].querySelector('.jl-portfolio-item-thumb img').classList.add('jl-scale-up')
             sliderItem[nv].querySelector('.jl-portfolio-item-info').classList.add('jl-fade-from-left')
+            sliderItem[nv].querySelector('.jl-portfolio-item-thumb button').classList.add('jl-fade-from-right')
+
         }
     }
 }
@@ -70,6 +72,8 @@ var removeActiveSlider = () => {
             sliderItem[nv].querySelector('.jl-portfolio-item-box').classList.remove('jl-scale-right')
             sliderItem[nv].querySelector('.jl-portfolio-item-thumb img').classList.remove('jl-scale-up')
             sliderItem[nv].querySelector('.jl-portfolio-item-info').classList.remove('jl-fade-from-left')
+            sliderItem[nv].querySelector('.jl-portfolio-item-thumb button').classList.remove('jl-fade-from-right')
+
 
         }
     }

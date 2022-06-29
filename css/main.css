@@ -24,6 +24,13 @@ label {
     }
 }
 
+@keyframes fadeFromRight {
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
 @keyframes slideTopIn {
     to {
         top: 15%;
@@ -176,6 +183,7 @@ label {
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 900;
     }
     .jl-logo {
         width: 74px;
@@ -442,6 +450,8 @@ label {
         margin-top: 18px;
         margin-right: 25px;
         float: right;
+        right: -25px;
+        opacity: 0;
     }
     .jl-portfolio-item-box {
         width: 100%;
@@ -760,6 +770,10 @@ label {
     background-color: green;
 }
 
+.jl-section-offset-top {
+    margin-top: 130px;
+}
+
 
 /*CLASSES DE ESTADO*/
 
@@ -777,6 +791,10 @@ label {
 
 .jl-fade-from-left {
     animation: fadeFromLeft 0.5s 1s forwards cubic-bezier(.14, .93, .45, .82);
+}
+
+.jl-fade-from-right {
+    animation: fadeFromRight 0.5s 1s forwards cubic-bezier(.14, .93, .45, .82);
 }
 
 .jl-scale-right {
