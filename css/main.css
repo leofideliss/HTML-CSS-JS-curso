@@ -442,8 +442,7 @@ label {
         padding: 40px 0 18px 0;
         position: relative;
     }
-    .jl-slider-list .jl-portfolio-item-thumb img,
-    .jl-portfolio-list .jl-portfolio-item-thumb img {
+    .jl-slider-list .jl-portfolio-item-thumb img {
         width: 550px;
         max-width: 100%;
         height: auto;
@@ -452,10 +451,13 @@ label {
         transform: scale(0);
     }
     .jl-portfolio-list .jl-portfolio-item-thumb img {
-        transform: scale(1);
+        width: 550px;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: -25px;
     }
-    .jl-slider-list .jl-portfolio-item-thumb>button,
-    .jl-portfolio-list .jl-portfolio-item-thumb>button {
+    .jl-slider-list .jl-portfolio-item-thumb>button {
         margin-top: 18px;
         margin-right: 25px;
         float: right;
@@ -463,11 +465,11 @@ label {
         opacity: 0;
     }
     .jl-portfolio-list .jl-portfolio-item-thumb>button {
-        opacity: 1;
-        right: 0px;
+        margin-top: 18px;
+        margin-right: 25px;
+        float: right;
     }
-    .jl-slider-list .jl-portfolio-item-box,
-    .jl-portfolio-list .jl-portfolio-item-box {
+    .jl-slider-list .jl-portfolio-item-box {
         width: 100%;
         height: 100%;
         background-color: #2f2f2f;
@@ -479,7 +481,13 @@ label {
         transform-origin: right;
     }
     .jl-portfolio-list .jl-portfolio-item-box {
-        transform: scaleX(1);
+        width: 100%;
+        height: 100%;
+        background-color: #2f2f2f;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     .jl-portfolio-list li {
         list-style: none;
@@ -650,6 +658,11 @@ label {
 .jl-title {
     font-family: 'Abril Fatface', serif;
     font-weight: 400;
+}
+
+.jl-subtitle {
+    font-family: 'Open Sans', serif;
+    font-weight: 800;
 }
 
 .jl-text-green {
