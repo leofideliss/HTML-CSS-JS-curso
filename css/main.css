@@ -516,6 +516,11 @@ label {
     .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info {
         margin-left: 30px;
     }
+    /* SOBRE */
+    #jl-avatar-sobre {
+        position: relative;
+        left: -15px;
+    }
 }
 
 @media screen and (min-width: 576px) {}
@@ -829,6 +834,38 @@ label {
 
 .jl-section-offset-top {
     margin-top: 130px;
+}
+
+.jl-img-responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.jl-page-list {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.jl-page-list>li {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.jl-page-list>li:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-color: #2CCB69;
 }
 
 
